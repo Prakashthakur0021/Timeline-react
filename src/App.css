@@ -54,7 +54,7 @@ h1 {
 .timeline-item-content {
   max-width: 70%;
   background: #fff;
-  width: 400px;
+  width: 350px; /* Change the width of content box for big screen */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   position: relative;
