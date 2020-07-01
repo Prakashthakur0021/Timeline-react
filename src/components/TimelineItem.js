@@ -11,6 +11,7 @@ const TimelineItem = ({ data }) => (
       <a href={data.link.url} target="_blank" rel="noopener noreferrer">
         {data.link.text}
       </a>
+      <span className="circle"></span>
     </div>
   </div>
 );

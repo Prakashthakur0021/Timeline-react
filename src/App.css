@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: linear-gradient(to right, #f5f7fa, #c3cfcc);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+#root {
+  width: 100%;
+}
+
+.timeline-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 100%;
+  background: red;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  align-self: flex-end;
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.timeline-item-content {
+  max-width: 70%;
+  background: #fff;
+  width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.timeline-item-content::after {
+  content: "";
+  width: 15px;
+  background: #fff;
+  height: 15px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: calc(50% - 7.5px);
+  right: -7.5px;
+  left: auto;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content::after {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+  left: -7.5px;
+  right: auto;
+}
+
+.timeline-item-content .tag {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  letter-spacing: 1px;
+  top: 5px;
+  left: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.timeline-item:nth-child(odd) .tag {
+  right: 5px;
+  left: auto;
+}
+
+.timeline-item-content time {
+  color: #fff;
+  font-size: 12px;
+}
+
+.timeline-item-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 15px 0;
+  max-width: 250px;
+}

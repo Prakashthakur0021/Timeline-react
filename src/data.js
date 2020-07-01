@@ -4,7 +4,7 @@ const data = [
     date: "April 13 2000",
     category: {
       tag: "web-idea",
-      color: "FFDB14",
+      color: "#FFDB14",
     },
     link: {
       url: "http://github.com/",
@@ -16,7 +16,7 @@ const data = [
     date: "June 43 2000",
     category: {
       tag: "html",
-      color: "D4FF14",
+      color: "#D4FF14",
     },
     link: {
       url: "http://github.com/",
@@ -28,7 +28,7 @@ const data = [
     date: "July 12 2000",
     category: {
       tag: "CSS",
-      color: "14DBFF",
+      color: "#14DBFF",
     },
     link: {
       url: "http://github.com/",
@@ -40,7 +40,7 @@ const data = [
     date: "May 34 2000",
     category: {
       tag: "web-design",
-      color: "FDBD41",
+      color: "#FDBD41",
     },
     link: {
       url: "http://github.com/",
